@@ -36,7 +36,7 @@ const listMessages = async (request) => {
     messages: await addressService.findAll(),
   };
 
-  return new Response(await renderFile("index.eta", data), responseDetails);
+  return new Response(await renderFile("count.eta", data), responseDetails);
 };
 
 const handleRequest = async (request) => {
